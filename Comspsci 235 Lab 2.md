@@ -41,3 +41,25 @@ git push origin main
 
 ## Branching and merging
 
+I created a new branch and navigated to it using the following commands on VSC:
+```
+git branch getrand
+git checkout getrand
+```
+I then modified the code and implemented a get_rand() definition and toss_coin() definition.
+```
+def get_rand():
+    '''Returns a random integer.'''
+    my_randint = random.randint(1,99)
+    return my_randint
+
+
+def toss_coin():
+    '''Return either Head or Tail'''
+    coin_choice = random.randint(1,2)
+    if coin_choice == 1:
+        coin = 'Head'
+        return coin
+    elif coin_choice == 2:
+        coin = 'Tail'
+        return coin

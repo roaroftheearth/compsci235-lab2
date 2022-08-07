@@ -73,7 +73,7 @@ def get_rand():
     """TODO: Add your code here 
         Hint: Using random.randint() function.
     """
-    my_randint = 0
+    my_randint = random.randint(1,99)
     return my_randint
 
 
@@ -82,8 +82,13 @@ def toss_coin():
     """TODO: Add your code here
         Hint: Using random.randint() function.
     """
-    coin = 'Head'
-    return coin
+    coin_choice = random.randint(1,2)
+    if coin_choice == 1:
+        coin = 'Head'
+        return coin
+    elif coin_choice == 2:
+        coin = 'Tail'
+        return coin
 
 
 def read_input():
